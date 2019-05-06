@@ -7,8 +7,10 @@ class Hash
     #   end
     # }
     # output
+    output = []
     output = self.select { |key, value| 
-      args.include?(value)
+     output << args.include?(value)
     }
+    output
   end
 end
